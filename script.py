@@ -2,7 +2,7 @@ import pyautogui
 import time
 import webbrowser
 
-# 1. Abrir o navegador e acessar o Hotmail
+
 webbrowser.open("https://outlook.live.com/mail/")  
 time.sleep(5)  # Espera carregar
 
@@ -12,7 +12,7 @@ botao_img = pyautogui.locateOnScreen('email_btn.png', confidence=0.8)
 # screenshot.save('screenshot.png')
 
 if botao_img:
-    pyautogui.click(botao_img)  # Clica na posição do botão
+    pyautogui.click(botao_img) 
     print("Botão 'Novo e-mail' encontrado e clicado!")
 else:
     print("Botão 'Novo e-mail' não encontrado na tela.")
@@ -24,7 +24,7 @@ pyautogui.press("enter")
 time.sleep(2)
 pyautogui.press("tab")  
 
-# 4. Digitar o assunto
+
 pyautogui.write("Teste de Automacao")
 time.sleep(2)
 pyautogui.press("tab")  
